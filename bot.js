@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexRip = /^\/rip/; botRegexCrrct = /^\/correct/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexBdog = /^\/bdog/; botRegexBrye = /^\/brye/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexBdog = /^\/bdog/; botRegexGoodg = /^\/gg/;
       botRegexGian = /^\/gian/; botRegexWrong = /^\/wrong/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -48,9 +48,9 @@ function respond() {
     postMessage("http://i3.kym-cdn.com/photos/images/facebook/000/787/356/d6f.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexBrye.test(request.text)) {
+  else if(request.text && botRegexGoodg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
+    postMessage("https://i.groupme.com/500x500.jpeg.974b9d0db5304155b6f93513bb5c0879");
     this.res.end();
   } 
   else if(request.text && botRegexGian.test(request.text)) {
@@ -87,7 +87,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    postMessage("https://i.groupme.com/300x300.jpeg.0c0f3b94c3014f72915a0281847075e0");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
