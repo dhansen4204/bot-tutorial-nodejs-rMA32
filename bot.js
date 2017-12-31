@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexFourth = /^\/4th/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexCrrct = /^\/correct/;
+      botRegexRip = /^\/rip/; botRegexCrrct = /^\/correct/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexBdog = /^\/bdog/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexWrong = /^\/wrong/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
@@ -23,9 +23,9 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  else if(request.text && botRegexSlut.test(request.text)) {
+  else if(request.text && botRegexRip.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("https://i.groupme.com/750x718.jpeg.1258a4943d724caba2500035e9e9a4ba");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
@@ -71,7 +71,7 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/Blitz/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("https://www.daddyleagues.com/blitz");
     this.res.end();
   } 
   
@@ -157,7 +157,7 @@ function respond() {
   }
   else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/forms/d/e/1FAIpQLSdrbe5iBRaBC7EWoodVm8z6285-dG2EdHXAOMOgz8md8T1jwQ/viewform");
+    postMessage("To submit a trade, click here: https://www.daddyleagues.com/blitz/forum/forum/7031");
     this.res.end();
   }
   
