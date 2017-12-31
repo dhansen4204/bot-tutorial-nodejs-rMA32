@@ -38,7 +38,7 @@ function respond() {
     postMessage("http://www.wikihow.com/Tie-a-Noose");
     this.res.end();
   } 
-  else if(request.text && botRegexbdog.test(request.text)) {
+  else if(request.text && botRegexBdog.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/750x750.jpeg.c49a282d6b7044a59e21d93e3e2aca63");
     this.res.end();
