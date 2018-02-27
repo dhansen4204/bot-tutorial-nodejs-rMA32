@@ -157,7 +157,7 @@ function respond() {
   }
   else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("To submit a trade, click here: https://www.daddyleagues.com/blitz/forum/forum/7031");
+    postMessage("To submit a trade, click here: https://daddyleagues.com/blitz/forum/forum/7751");
     this.res.end();
   }
   
