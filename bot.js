@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexRip = /^\/rip/; botRegexCrrct = /^\/correct/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexBdog = /^\/bdog/; botRegexGoodg = /^\/gg/;
+      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexVotes = /^\/votes/; botRegexGoodg = /^\/gg/;
       botRegexLaugh = /^\/lol/; botRegexWrong = /^\/wrong/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -38,9 +38,9 @@ function respond() {
     postMessage("http://www.wikihow.com/Tie-a-Noose");
     this.res.end();
   } 
-  else if(request.text && botRegexBdog.test(request.text)) {
+  else if(request.text && botRegexVotes.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/750x750.jpeg.c49a282d6b7044a59e21d93e3e2aca63");
+    postMessage("https://docs.google.com/spreadsheets/d/1QBF6Hcx3nkFcmjItOzkBFx9RKP4xle3foX4zTF4U9WA/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
@@ -71,7 +71,7 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("https://www.daddyleagues.com/blitz");
+    postMessage("https://www.daddyleagues.com/success");
     this.res.end();
   } 
   
@@ -92,25 +92,25 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/blitz/rules");
+    postMessage("http://daddyleagues.com/SUCCESS/rules");
     this.res.end();
   } 
   else if(request.text && botRegexFourth.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/693x131.jpeg.c198f188d9fb4e5ba3d40b95fa1326e7");
+    postMessage("You are allowed to go for it on 4th down under these conditions: \n 1. You are up by 3 or less, past the 50 and it is 4th and 3 or less. \n 2. You are down by 14 or more in the second half. \n 3. You are down in the 4th quarter. ");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/Blitz/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/success/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/Blitz/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/success/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
@@ -157,7 +157,7 @@ function respond() {
   }
   else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("To submit a trade, click here: https://daddyleagues.com/blitz/forum/forum/7751");
+    postMessage("To submit a trade, click here: https://goo.gl/forms/b0bWKc22HGITXCoA2");
     this.res.end();
   }
   
